@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.28)
+
+project(openfinitex VERSION 1.0.0 LANGUAGES C CXX)
+
+# set(SRC test_sample.cpp test_add.cpp test_main.cpp)
+set(CMAKE_CXX_STANDARD 17)
+# set(EXECUTABLE_OUTPUT_PATH /home/lyy/C++)
+# aux_source_directory(${PROJECT_SOURCE_DIR} SRC)
+file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
+include_directories(${PROJECT_SOURCE_DIR}/../include/openfinitex)
+add_executable(test_sample ${SRC})
+target_include_directories(test_sample PUBLIC ${CMAKE_SOURCE_DIR}/../include)
+# message(STATUS "========================================")
+# message(STATUS "项目配置信息:")
+# message(STATUS "CMAKE_CURRENT_SOURCE_DIR: ${CMAKE_CURRENT_SOURCE_DIR}")
+# message(STATUS "PROJECT_SOURCE_DIR: ${PROJECT_SOURCE_DIR}")
+# message(STATUS "CMAKE_SOURCE_DIR: ${CMAKE_SOURCE_DIR}")
+# message(STATUS "========================================")

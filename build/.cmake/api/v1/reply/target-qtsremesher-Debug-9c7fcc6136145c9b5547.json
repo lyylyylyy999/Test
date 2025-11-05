@@ -1,0 +1,290 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "apps/qtsremesher/qtsremesher.cpython-312-x86_64-linux-gnu.so"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"__Python3_add_library",
+			"python3_add_library",
+			"pybind11_add_module",
+			"install",
+			"target_link_libraries",
+			"use_CGAL_GMP_support",
+			"CGAL_setup_CGAL_dependencies",
+			"CGAL_setup_target_dependencies",
+			"find_package",
+			"add_compile_options",
+			"add_compile_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"/home/lyy/python_venv/fealpy/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/FindPython/Support.cmake",
+			"/home/lyy/python_venv/fealpy/lib/python3.12/site-packages/cmake/data/share/cmake-4.1/Modules/FindPython3.cmake:659:EVAL",
+			"/usr/lib/cmake/pybind11/pybind11NewTools.cmake",
+			"apps/qtsremesher/CMakeLists.txt",
+			"/usr/lib/x86_64-linux-gnu/cmake/CGAL/CGAL_SetupGMP.cmake",
+			"/usr/lib/x86_64-linux-gnu/cmake/CGAL/CGAL_SetupCGALDependencies.cmake",
+			"/usr/lib/x86_64-linux-gnu/cmake/CGAL/CGAL_setup_target_dependencies.cmake",
+			"/usr/lib/x86_64-linux-gnu/cmake/CGAL/CGALConfig.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 189,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 2,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 4418,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 59,
+				"parent" : 0
+			},
+			{
+				"file" : 8
+			},
+			{
+				"command" : 9,
+				"file" : 8,
+				"line" : 79,
+				"parent" : 6
+			},
+			{
+				"file" : 7,
+				"parent" : 7
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 185,
+				"parent" : 8
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 3,
+				"parent" : 9
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 88,
+				"parent" : 10
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 70,
+				"parent" : 11
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 73,
+				"parent" : 11
+			},
+			{
+				"command" : 10,
+				"file" : 8,
+				"line" : 64,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 11,
+				"file" : 8,
+				"line" : 56,
+				"parent" : 6
+			},
+			{
+				"command" : 12,
+				"file" : 3,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 194,
+				"parent" : 1
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -std=c++17 -fPIC -fvisibility=hidden"
+				},
+				{
+					"backtrace" : 14,
+					"fragment" : "-O2"
+				},
+				{
+					"backtrace" : 14,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 14,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 15,
+					"fragment" : "-frounding-math"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 15,
+					"define" : "CGAL_USE_CORE=1"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "CGAL_USE_GMPXX=1"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "_USE_MATH_DEFINES"
+				},
+				{
+					"define" : "qtsremesher_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 17,
+					"isSystem" : true,
+					"path" : "/usr/include/python3.12"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					18,
+					18,
+					18,
+					15
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "qtsremesher::@7d7d613baffd90c14a44",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 5,
+				"path" : "/home/lyy/python_venv/fealpy/lib/python3.12/site-packages"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-shared",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,\"\\$$ORIGIN:\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libgmpxx.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libmpfr.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libgmp.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "qtsremesher",
+	"nameOnDisk" : "qtsremesher.cpython-312-x86_64-linux-gnu.so",
+	"paths" : 
+	{
+		"build" : "apps/qtsremesher",
+		"source" : "apps/qtsremesher"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "apps/qtsremesher/qtsremesher.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "MODULE_LIBRARY"
+}

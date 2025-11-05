@@ -1,0 +1,4 @@
+#ifndef TRIANGLE_MESH_HPP_
+#define TRIANGLE_MESH_HPP_
+
+#endif // TRIANGLE_MESH_HPP_

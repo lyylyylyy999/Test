@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g -Wl,--dependency-file=CMakeFiles/qtsremesher.dir/link.d -shared  -o qtsremesher.cpython-312-x86_64-linux-gnu.so CMakeFiles/qtsremesher.dir/qtsremesher.cpp.o  -Wl,-rpath,"\$ORIGIN:" /usr/lib/x86_64-linux-gnu/libgmpxx.so /usr/lib/x86_64-linux-gnu/libmpfr.so /usr/lib/x86_64-linux-gnu/libgmp.so
