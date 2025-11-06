@@ -1,2 +1,0 @@
-/usr/bin/ar qc libgbmodal.a CMakeFiles/gbmodal.dir/gbmodal_interface.cpp.o CMakeFiles/gbmodal.dir/dirichlet_bc.cpp.o CMakeFiles/gbmodal.dir/tet31.cpp.o CMakeFiles/gbmodal.dir/tet_mesh.cpp.o
-/usr/bin/ranlib libgbmodal.a

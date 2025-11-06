@@ -1,13 +1,9 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/lyy/repositories/openfinitex/build/cmake_install.cmake",
-		"/home/lyy/repositories/openfinitex/build/examples/cmake_install.cmake",
-		"/home/lyy/repositories/openfinitex/build/examples/cgal/cmake_install.cmake",
-		"/home/lyy/repositories/openfinitex/build/apps/cmake_install.cmake",
-		"/home/lyy/repositories/openfinitex/build/apps/qtsremesher/cmake_install.cmake",
-		"/home/lyy/repositories/openfinitex/build/apps/gbmodal/cmake_install.cmake",
-		"/home/lyy/repositories/openfinitex/build/tests/cmake_install.cmake"
+		"/home/lyy/repositories/Test/build/cmake_install.cmake",
+		"/home/lyy/repositories/Test/build/src/cmake_install.cmake",
+		"/home/lyy/repositories/Test/build/test/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
