@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/test_sample.dir/link.d CMakeFiles/test_sample.dir/test_add.main.cpp.o -o test_sample   -L/home/lyy/repositories/openfinitex/tests2/lib2  -Wl,-rpath,/home/lyy/repositories/openfinitex/tests2/lib2 -lcalc

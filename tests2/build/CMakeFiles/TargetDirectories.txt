@@ -1,3 +1,0 @@
-/home/lyy/repositories/openfinitex/tests2/build/CMakeFiles/test_sample.dir
-/home/lyy/repositories/openfinitex/tests2/build/CMakeFiles/edit_cache.dir
-/home/lyy/repositories/openfinitex/tests2/build/CMakeFiles/rebuild_cache.dir
