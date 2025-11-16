@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcgal_lib.a CMakeFiles/cgal_lib.dir/add.cpp.o
+/usr/bin/ranlib libcgal_lib.a

@@ -1,9 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/lyy/repositories/Test/build/cmake_install.cmake",
-		"/home/lyy/repositories/Test/build/src/cmake_install.cmake",
-		"/home/lyy/repositories/Test/build/test/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

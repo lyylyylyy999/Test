@@ -1,0 +1,57 @@
+Start testing: Nov 16 14:52 CST
+----------------------------------------------------------
+1/2 Testing: AddTest.BasicAddition
+1/2 Test: AddTest.BasicAddition
+Command: "/home/lyy/repositories/Test/build/tests/test_cgal/test_cgal" "--gtest_filter=AddTest.BasicAddition" "--gtest_also_run_disabled_tests"
+Directory: /home/lyy/repositories/Test/build/tests/test_cgal
+"AddTest.BasicAddition" start time: Nov 16 14:52 CST
+Output:
+----------------------------------------------------------
+Running main() from /home/lyy/repositories/Test/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AddTest.BasicAddition
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AddTest
+[ RUN      ] AddTest.BasicAddition
+[       OK ] AddTest.BasicAddition (0 ms)
+[----------] 1 test from AddTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AddTest.BasicAddition" end time: Nov 16 14:52 CST
+"AddTest.BasicAddition" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: AddTest.LargeNumbers
+2/2 Test: AddTest.LargeNumbers
+Command: "/home/lyy/repositories/Test/build/tests/test_cgal/test_cgal" "--gtest_filter=AddTest.LargeNumbers" "--gtest_also_run_disabled_tests"
+Directory: /home/lyy/repositories/Test/build/tests/test_cgal
+"AddTest.LargeNumbers" start time: Nov 16 14:52 CST
+Output:
+----------------------------------------------------------
+Running main() from /home/lyy/repositories/Test/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AddTest.LargeNumbers
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AddTest
+[ RUN      ] AddTest.LargeNumbers
+[       OK ] AddTest.LargeNumbers (0 ms)
+[----------] 1 test from AddTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AddTest.LargeNumbers" end time: Nov 16 14:52 CST
+"AddTest.LargeNumbers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 16 14:52 CST

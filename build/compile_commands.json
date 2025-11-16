@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/home/lyy/repositories/Test/build/examples/cgal",
+  "command": "/usr/bin/g++  -I/home/lyy/repositories/Test/examples/cgal -g -std=gnu++17 -o CMakeFiles/cgal_lib.dir/add.cpp.o -c /home/lyy/repositories/Test/examples/cgal/add.cpp",
+  "file": "/home/lyy/repositories/Test/examples/cgal/add.cpp",
+  "output": "examples/cgal/CMakeFiles/cgal_lib.dir/add.cpp.o"
+},
+{
+  "directory": "/home/lyy/repositories/Test/build/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/g++  -I/home/lyy/repositories/Test/build/_deps/googletest-src/googlemock/include -I/home/lyy/repositories/Test/build/_deps/googletest-src/googlemock -isystem /home/lyy/repositories/Test/build/_deps/googletest-src/googletest/include -isystem /home/lyy/repositories/Test/build/_deps/googletest-src/googletest -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /home/lyy/repositories/Test/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "file": "/home/lyy/repositories/Test/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
+},
+{
+  "directory": "/home/lyy/repositories/Test/build/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/g++  -isystem /home/lyy/repositories/Test/build/_deps/googletest-src/googlemock/include -isystem /home/lyy/repositories/Test/build/_deps/googletest-src/googlemock -isystem /home/lyy/repositories/Test/build/_deps/googletest-src/googletest/include -isystem /home/lyy/repositories/Test/build/_deps/googletest-src/googletest -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/lyy/repositories/Test/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "file": "/home/lyy/repositories/Test/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+},
+{
+  "directory": "/home/lyy/repositories/Test/build/_deps/googletest-build/googletest",
+  "command": "/usr/bin/g++  -I/home/lyy/repositories/Test/build/_deps/googletest-src/googletest/include -I/home/lyy/repositories/Test/build/_deps/googletest-src/googletest -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/lyy/repositories/Test/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "file": "/home/lyy/repositories/Test/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+},
+{
+  "directory": "/home/lyy/repositories/Test/build/_deps/googletest-build/googletest",
+  "command": "/usr/bin/g++  -isystem /home/lyy/repositories/Test/build/_deps/googletest-src/googletest/include -isystem /home/lyy/repositories/Test/build/_deps/googletest-src/googletest -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/lyy/repositories/Test/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "file": "/home/lyy/repositories/Test/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+},
+{
+  "directory": "/home/lyy/repositories/Test/build/tests/test_cgal",
+  "command": "/usr/bin/g++  -I/home/lyy/repositories/Test/examples/cgal -isystem /home/lyy/repositories/Test/build/_deps/googletest-src/googletest/include -isystem /home/lyy/repositories/Test/build/_deps/googletest-src/googletest -g -std=gnu++17 -o CMakeFiles/test_cgal.dir/test_add.cpp.o -c /home/lyy/repositories/Test/tests/test_cgal/test_add.cpp",
+  "file": "/home/lyy/repositories/Test/tests/test_cgal/test_add.cpp",
+  "output": "tests/test_cgal/CMakeFiles/test_cgal.dir/test_add.cpp.o"
+}
+]

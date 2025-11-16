@@ -1,2 +1,0 @@
-/usr/bin/ar qc /home/lyy/repositories/Test/lib/libcalc.a CMakeFiles/calc.dir/add.cpp.o CMakeFiles/calc.dir/div.cpp.o CMakeFiles/calc.dir/mult.cpp.o CMakeFiles/calc.dir/sub.cpp.o
-/usr/bin/ranlib /home/lyy/repositories/Test/lib/libcalc.a
