@@ -1,13 +1,14 @@
 cmake_minimum_required(VERSION 3.28)
-project(Test)
+project(openfinitex VERSION 1.0.0 LANGUAGES C CXX)
 
-set(HEAD_PATH ${CMAKE_CURRENT_SOURCE_DIR}/include)
-set(LIB_PATH ${CMAKE_CURRENT_SOURCE_DIR}/lib)
-set(EXEC_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(CALC_LIB calc)
-set(TEST_EXE test)
+# 构建 example 子模块
+add_subdirectory(examples)
 
-add_subdirectory(src)
-add_subdirectory(test)
+# 构建 tests 子模块
+enable_testing()
+add_subdirectory(tests)
+
 
