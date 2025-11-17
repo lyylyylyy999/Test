@@ -168,22 +168,34 @@ preinstall/fast:
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -P /home/lyy/repositories/Test/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cgal_lib
+# Target rules for targets named add_lib
 
 # Build rule for target.
-cgal_lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cgal_lib
-.PHONY : cgal_lib
+add_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 add_lib
+.PHONY : add_lib
 
 # fast build rule for target.
-cgal_lib/fast:
-	$(MAKE) $(MAKESILENT) -f examples/cgal/CMakeFiles/cgal_lib.dir/build.make examples/cgal/CMakeFiles/cgal_lib.dir/build
-.PHONY : cgal_lib/fast
+add_lib/fast:
+	$(MAKE) $(MAKESILENT) -f src/add/CMakeFiles/add_lib.dir/build.make src/add/CMakeFiles/add_lib.dir/build
+.PHONY : add_lib/fast
+
+#=============================================================================
+# Target rules for targets named sub_lib
+
+# Build rule for target.
+sub_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sub_lib
+.PHONY : sub_lib
+
+# fast build rule for target.
+sub_lib/fast:
+	$(MAKE) $(MAKESILENT) -f src/sub/CMakeFiles/sub_lib.dir/build.make src/sub/CMakeFiles/sub_lib.dir/build
+.PHONY : sub_lib/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -238,17 +250,30 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
-# Target rules for targets named test_cgal
+# Target rules for targets named test_add
 
 # Build rule for target.
-test_cgal: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_cgal
-.PHONY : test_cgal
+test_add: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_add
+.PHONY : test_add
 
 # fast build rule for target.
-test_cgal/fast:
-	$(MAKE) $(MAKESILENT) -f tests/test_cgal/CMakeFiles/test_cgal.dir/build.make tests/test_cgal/CMakeFiles/test_cgal.dir/build
-.PHONY : test_cgal/fast
+test_add/fast:
+	$(MAKE) $(MAKESILENT) -f tests/test_add/CMakeFiles/test_add.dir/build.make tests/test_add/CMakeFiles/test_add.dir/build
+.PHONY : test_add/fast
+
+#=============================================================================
+# Target rules for targets named test_sub
+
+# Build rule for target.
+test_sub: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_sub
+.PHONY : test_sub
+
+# fast build rule for target.
+test_sub/fast:
+	$(MAKE) $(MAKESILENT) -f tests/test_sub/CMakeFiles/test_sub.dir/build.make tests/test_sub/CMakeFiles/test_sub.dir/build
+.PHONY : test_sub/fast
 
 # Help Target
 help:
@@ -263,12 +288,14 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... cgal_lib"
+	@echo "... add_lib"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... test_cgal"
+	@echo "... sub_lib"
+	@echo "... test_add"
+	@echo "... test_sub"
 .PHONY : help
 
 
@@ -280,7 +307,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /home/lyy/repositories/Test/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,3 +1,5 @@
-AddTest.BasicAddition 1 0.00254764
-AddTest.LargeNumbers 1 0.00306885
+AddTest.BasicAddition 1 0.00335253
+AddTest.LargeNumbers 1 0.00394171
+subTest.Basicsubition 1 0.00328376
+subTest.LargeNumbers 1 0.00337494
 ---

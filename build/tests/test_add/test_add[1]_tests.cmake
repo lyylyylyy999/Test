@@ -1,0 +1,5 @@
+add_test([=[AddTest.BasicAddition]=]  /home/lyy/repositories/Test/build/tests/test_add/test_add [==[--gtest_filter=AddTest.BasicAddition]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[AddTest.BasicAddition]=]  PROPERTIES WORKING_DIRECTORY /home/lyy/repositories/Test/build/tests/test_add SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[AddTest.LargeNumbers]=]  /home/lyy/repositories/Test/build/tests/test_add/test_add [==[--gtest_filter=AddTest.LargeNumbers]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[AddTest.LargeNumbers]=]  PROPERTIES WORKING_DIRECTORY /home/lyy/repositories/Test/build/tests/test_add SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  test_add_TESTS AddTest.BasicAddition AddTest.LargeNumbers)

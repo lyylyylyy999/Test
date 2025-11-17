@@ -1,0 +1,5 @@
+if(EXISTS "/home/lyy/repositories/Test/build/tests/test_add/test_add[1]_tests.cmake")
+  include("/home/lyy/repositories/Test/build/tests/test_add/test_add[1]_tests.cmake")
+else()
+  add_test(test_add_NOT_BUILT test_add_NOT_BUILT)
+endif()

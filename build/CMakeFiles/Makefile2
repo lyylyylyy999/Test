@@ -63,17 +63,17 @@ CMAKE_BINARY_DIR = /home/lyy/repositories/Test/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: examples/all
+all: src/all
 all: tests/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: examples/preinstall
+preinstall: src/preinstall
 preinstall: tests/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: examples/clean
+clean: src/clean
 clean: tests/clean
 .PHONY : clean
 
@@ -129,93 +129,155 @@ _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMake
 .PHONY : _deps/googletest-build/googletest/clean
 
 #=============================================================================
-# Directory level rules for directory examples
+# Directory level rules for directory src
 
 # Recursive "all" directory target.
-examples/all: examples/cgal/all
-.PHONY : examples/all
+src/all: src/add/all
+src/all: src/sub/all
+.PHONY : src/all
 
 # Recursive "preinstall" directory target.
-examples/preinstall: examples/cgal/preinstall
-.PHONY : examples/preinstall
+src/preinstall: src/add/preinstall
+src/preinstall: src/sub/preinstall
+.PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-examples/clean: examples/cgal/clean
-.PHONY : examples/clean
+src/clean: src/add/clean
+src/clean: src/sub/clean
+.PHONY : src/clean
 
 #=============================================================================
-# Directory level rules for directory examples/cgal
+# Directory level rules for directory src/add
 
 # Recursive "all" directory target.
-examples/cgal/all: examples/cgal/CMakeFiles/cgal_lib.dir/all
-.PHONY : examples/cgal/all
+src/add/all: src/add/CMakeFiles/add_lib.dir/all
+.PHONY : src/add/all
 
 # Recursive "preinstall" directory target.
-examples/cgal/preinstall:
-.PHONY : examples/cgal/preinstall
+src/add/preinstall:
+.PHONY : src/add/preinstall
 
 # Recursive "clean" directory target.
-examples/cgal/clean: examples/cgal/CMakeFiles/cgal_lib.dir/clean
-.PHONY : examples/cgal/clean
+src/add/clean: src/add/CMakeFiles/add_lib.dir/clean
+.PHONY : src/add/clean
+
+#=============================================================================
+# Directory level rules for directory src/sub
+
+# Recursive "all" directory target.
+src/sub/all: src/sub/CMakeFiles/sub_lib.dir/all
+.PHONY : src/sub/all
+
+# Recursive "preinstall" directory target.
+src/sub/preinstall:
+.PHONY : src/sub/preinstall
+
+# Recursive "clean" directory target.
+src/sub/clean: src/sub/CMakeFiles/sub_lib.dir/clean
+.PHONY : src/sub/clean
 
 #=============================================================================
 # Directory level rules for directory tests
 
 # Recursive "all" directory target.
 tests/all: _deps/googletest-build/all
-tests/all: tests/test_cgal/all
+tests/all: tests/test_add/all
+tests/all: tests/test_sub/all
 .PHONY : tests/all
 
 # Recursive "preinstall" directory target.
 tests/preinstall: _deps/googletest-build/preinstall
-tests/preinstall: tests/test_cgal/preinstall
+tests/preinstall: tests/test_add/preinstall
+tests/preinstall: tests/test_sub/preinstall
 .PHONY : tests/preinstall
 
 # Recursive "clean" directory target.
 tests/clean: _deps/googletest-build/clean
-tests/clean: tests/test_cgal/clean
+tests/clean: tests/test_add/clean
+tests/clean: tests/test_sub/clean
 .PHONY : tests/clean
 
 #=============================================================================
-# Directory level rules for directory tests/test_cgal
+# Directory level rules for directory tests/test_add
 
 # Recursive "all" directory target.
-tests/test_cgal/all: tests/test_cgal/CMakeFiles/test_cgal.dir/all
-.PHONY : tests/test_cgal/all
+tests/test_add/all: tests/test_add/CMakeFiles/test_add.dir/all
+.PHONY : tests/test_add/all
 
 # Recursive "preinstall" directory target.
-tests/test_cgal/preinstall:
-.PHONY : tests/test_cgal/preinstall
+tests/test_add/preinstall:
+.PHONY : tests/test_add/preinstall
 
 # Recursive "clean" directory target.
-tests/test_cgal/clean: tests/test_cgal/CMakeFiles/test_cgal.dir/clean
-.PHONY : tests/test_cgal/clean
+tests/test_add/clean: tests/test_add/CMakeFiles/test_add.dir/clean
+.PHONY : tests/test_add/clean
 
 #=============================================================================
-# Target rules for target examples/cgal/CMakeFiles/cgal_lib.dir
+# Directory level rules for directory tests/test_sub
+
+# Recursive "all" directory target.
+tests/test_sub/all: tests/test_sub/CMakeFiles/test_sub.dir/all
+.PHONY : tests/test_sub/all
+
+# Recursive "preinstall" directory target.
+tests/test_sub/preinstall:
+.PHONY : tests/test_sub/preinstall
+
+# Recursive "clean" directory target.
+tests/test_sub/clean: tests/test_sub/CMakeFiles/test_sub.dir/clean
+.PHONY : tests/test_sub/clean
+
+#=============================================================================
+# Target rules for target src/add/CMakeFiles/add_lib.dir
 
 # All Build rule for target.
-examples/cgal/CMakeFiles/cgal_lib.dir/all:
-	$(MAKE) $(MAKESILENT) -f examples/cgal/CMakeFiles/cgal_lib.dir/build.make examples/cgal/CMakeFiles/cgal_lib.dir/depend
-	$(MAKE) $(MAKESILENT) -f examples/cgal/CMakeFiles/cgal_lib.dir/build.make examples/cgal/CMakeFiles/cgal_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyy/repositories/Test/build/CMakeFiles --progress-num=1,2 "Built target cgal_lib"
-.PHONY : examples/cgal/CMakeFiles/cgal_lib.dir/all
+src/add/CMakeFiles/add_lib.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/add/CMakeFiles/add_lib.dir/build.make src/add/CMakeFiles/add_lib.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/add/CMakeFiles/add_lib.dir/build.make src/add/CMakeFiles/add_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyy/repositories/Test/build/CMakeFiles --progress-num=1,2 "Built target add_lib"
+.PHONY : src/add/CMakeFiles/add_lib.dir/all
 
 # Build rule for subdir invocation for target.
-examples/cgal/CMakeFiles/cgal_lib.dir/rule: cmake_check_build_system
+src/add/CMakeFiles/add_lib.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyy/repositories/Test/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/cgal/CMakeFiles/cgal_lib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/add/CMakeFiles/add_lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyy/repositories/Test/build/CMakeFiles 0
-.PHONY : examples/cgal/CMakeFiles/cgal_lib.dir/rule
+.PHONY : src/add/CMakeFiles/add_lib.dir/rule
 
 # Convenience name for target.
-cgal_lib: examples/cgal/CMakeFiles/cgal_lib.dir/rule
-.PHONY : cgal_lib
+add_lib: src/add/CMakeFiles/add_lib.dir/rule
+.PHONY : add_lib
 
 # clean rule for target.
-examples/cgal/CMakeFiles/cgal_lib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f examples/cgal/CMakeFiles/cgal_lib.dir/build.make examples/cgal/CMakeFiles/cgal_lib.dir/clean
-.PHONY : examples/cgal/CMakeFiles/cgal_lib.dir/clean
+src/add/CMakeFiles/add_lib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/add/CMakeFiles/add_lib.dir/build.make src/add/CMakeFiles/add_lib.dir/clean
+.PHONY : src/add/CMakeFiles/add_lib.dir/clean
+
+#=============================================================================
+# Target rules for target src/sub/CMakeFiles/sub_lib.dir
+
+# All Build rule for target.
+src/sub/CMakeFiles/sub_lib.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/sub/CMakeFiles/sub_lib.dir/build.make src/sub/CMakeFiles/sub_lib.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/sub/CMakeFiles/sub_lib.dir/build.make src/sub/CMakeFiles/sub_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyy/repositories/Test/build/CMakeFiles --progress-num=11,12 "Built target sub_lib"
+.PHONY : src/sub/CMakeFiles/sub_lib.dir/all
+
+# Build rule for subdir invocation for target.
+src/sub/CMakeFiles/sub_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyy/repositories/Test/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/sub/CMakeFiles/sub_lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyy/repositories/Test/build/CMakeFiles 0
+.PHONY : src/sub/CMakeFiles/sub_lib.dir/rule
+
+# Convenience name for target.
+sub_lib: src/sub/CMakeFiles/sub_lib.dir/rule
+.PHONY : sub_lib
+
+# clean rule for target.
+src/sub/CMakeFiles/sub_lib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/sub/CMakeFiles/sub_lib.dir/build.make src/sub/CMakeFiles/sub_lib.dir/clean
+.PHONY : src/sub/CMakeFiles/sub_lib.dir/clean
 
 #=============================================================================
 # Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
@@ -323,32 +385,60 @@ _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean:
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean
 
 #=============================================================================
-# Target rules for target tests/test_cgal/CMakeFiles/test_cgal.dir
+# Target rules for target tests/test_add/CMakeFiles/test_add.dir
 
 # All Build rule for target.
-tests/test_cgal/CMakeFiles/test_cgal.dir/all: examples/cgal/CMakeFiles/cgal_lib.dir/all
-tests/test_cgal/CMakeFiles/test_cgal.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-tests/test_cgal/CMakeFiles/test_cgal.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-	$(MAKE) $(MAKESILENT) -f tests/test_cgal/CMakeFiles/test_cgal.dir/build.make tests/test_cgal/CMakeFiles/test_cgal.dir/depend
-	$(MAKE) $(MAKESILENT) -f tests/test_cgal/CMakeFiles/test_cgal.dir/build.make tests/test_cgal/CMakeFiles/test_cgal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyy/repositories/Test/build/CMakeFiles --progress-num=11,12 "Built target test_cgal"
-.PHONY : tests/test_cgal/CMakeFiles/test_cgal.dir/all
+tests/test_add/CMakeFiles/test_add.dir/all: src/add/CMakeFiles/add_lib.dir/all
+tests/test_add/CMakeFiles/test_add.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+tests/test_add/CMakeFiles/test_add.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/test_add/CMakeFiles/test_add.dir/build.make tests/test_add/CMakeFiles/test_add.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/test_add/CMakeFiles/test_add.dir/build.make tests/test_add/CMakeFiles/test_add.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyy/repositories/Test/build/CMakeFiles --progress-num=13,14 "Built target test_add"
+.PHONY : tests/test_add/CMakeFiles/test_add.dir/all
 
 # Build rule for subdir invocation for target.
-tests/test_cgal/CMakeFiles/test_cgal.dir/rule: cmake_check_build_system
+tests/test_add/CMakeFiles/test_add.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyy/repositories/Test/build/CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/test_cgal/CMakeFiles/test_cgal.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/test_add/CMakeFiles/test_add.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyy/repositories/Test/build/CMakeFiles 0
-.PHONY : tests/test_cgal/CMakeFiles/test_cgal.dir/rule
+.PHONY : tests/test_add/CMakeFiles/test_add.dir/rule
 
 # Convenience name for target.
-test_cgal: tests/test_cgal/CMakeFiles/test_cgal.dir/rule
-.PHONY : test_cgal
+test_add: tests/test_add/CMakeFiles/test_add.dir/rule
+.PHONY : test_add
 
 # clean rule for target.
-tests/test_cgal/CMakeFiles/test_cgal.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tests/test_cgal/CMakeFiles/test_cgal.dir/build.make tests/test_cgal/CMakeFiles/test_cgal.dir/clean
-.PHONY : tests/test_cgal/CMakeFiles/test_cgal.dir/clean
+tests/test_add/CMakeFiles/test_add.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/test_add/CMakeFiles/test_add.dir/build.make tests/test_add/CMakeFiles/test_add.dir/clean
+.PHONY : tests/test_add/CMakeFiles/test_add.dir/clean
+
+#=============================================================================
+# Target rules for target tests/test_sub/CMakeFiles/test_sub.dir
+
+# All Build rule for target.
+tests/test_sub/CMakeFiles/test_sub.dir/all: src/sub/CMakeFiles/sub_lib.dir/all
+tests/test_sub/CMakeFiles/test_sub.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+tests/test_sub/CMakeFiles/test_sub.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/test_sub/CMakeFiles/test_sub.dir/build.make tests/test_sub/CMakeFiles/test_sub.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/test_sub/CMakeFiles/test_sub.dir/build.make tests/test_sub/CMakeFiles/test_sub.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lyy/repositories/Test/build/CMakeFiles --progress-num=15,16 "Built target test_sub"
+.PHONY : tests/test_sub/CMakeFiles/test_sub.dir/all
+
+# Build rule for subdir invocation for target.
+tests/test_sub/CMakeFiles/test_sub.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyy/repositories/Test/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/test_sub/CMakeFiles/test_sub.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lyy/repositories/Test/build/CMakeFiles 0
+.PHONY : tests/test_sub/CMakeFiles/test_sub.dir/rule
+
+# Convenience name for target.
+test_sub: tests/test_sub/CMakeFiles/test_sub.dir/rule
+.PHONY : test_sub
+
+# clean rule for target.
+tests/test_sub/CMakeFiles/test_sub.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/test_sub/CMakeFiles/test_sub.dir/build.make tests/test_sub/CMakeFiles/test_sub.dir/clean
+.PHONY : tests/test_sub/CMakeFiles/test_sub.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
@@ -357,7 +447,6 @@ tests/test_cgal/CMakeFiles/test_cgal.dir/clean:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /home/lyy/repositories/Test/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

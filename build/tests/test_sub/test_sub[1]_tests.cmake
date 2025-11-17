@@ -1,0 +1,5 @@
+add_test([=[subTest.Basicsubition]=]  /home/lyy/repositories/Test/build/tests/test_sub/test_sub [==[--gtest_filter=subTest.Basicsubition]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[subTest.Basicsubition]=]  PROPERTIES WORKING_DIRECTORY /home/lyy/repositories/Test/build/tests/test_sub SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[subTest.LargeNumbers]=]  /home/lyy/repositories/Test/build/tests/test_sub/test_sub [==[--gtest_filter=subTest.LargeNumbers]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[subTest.LargeNumbers]=]  PROPERTIES WORKING_DIRECTORY /home/lyy/repositories/Test/build/tests/test_sub SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  test_sub_TESTS subTest.Basicsubition subTest.LargeNumbers)

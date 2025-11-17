@@ -11,8 +11,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
-  "CMakeFiles/VerifyGlobs.cmake"
-  "CMakeFiles/cmake.verify_globs"
   "_deps/googletest-src/CMakeLists.txt"
   "_deps/googletest-src/googlemock/CMakeLists.txt"
   "_deps/googletest-src/googlemock/cmake/gmock.pc.in"
@@ -22,10 +20,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "_deps/googletest-src/googletest/cmake/gtest.pc.in"
   "_deps/googletest-src/googletest/cmake/gtest_main.pc.in"
   "_deps/googletest-src/googletest/cmake/internal_utils.cmake"
-  "/home/lyy/repositories/Test/examples/CMakeLists.txt"
-  "/home/lyy/repositories/Test/examples/cgal/CMakeLists.txt"
+  "/home/lyy/repositories/Test/src/CMakeLists.txt"
+  "/home/lyy/repositories/Test/src/add/CMakeLists.txt"
+  "/home/lyy/repositories/Test/src/sub/CMakeLists.txt"
   "/home/lyy/repositories/Test/tests/CMakeLists.txt"
-  "/home/lyy/repositories/Test/tests/test_cgal/CMakeLists.txt"
+  "/home/lyy/repositories/Test/tests/test_add/CMakeLists.txt"
+  "/home/lyy/repositories/Test/tests/test_sub/CMakeLists.txt"
   "/usr/share/cmake-3.28/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
   "/usr/share/cmake-3.28/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake"
@@ -73,8 +73,9 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "examples/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "examples/cgal/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/add/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/sub/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/googletest-subbuild/CMakeLists.txt"
   "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/googletest-build/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -86,15 +87,18 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "_deps/googletest-build/googletest/generated/gtest.pc"
   "_deps/googletest-build/googletest/generated/gtest_main.pc"
   "_deps/googletest-build/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "tests/test_cgal/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tests/test_add/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tests/test_sub/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "examples/cgal/CMakeFiles/cgal_lib.dir/DependInfo.cmake"
+  "src/add/CMakeFiles/add_lib.dir/DependInfo.cmake"
+  "src/sub/CMakeFiles/sub_lib.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-  "tests/test_cgal/CMakeFiles/test_cgal.dir/DependInfo.cmake"
+  "tests/test_add/CMakeFiles/test_add.dir/DependInfo.cmake"
+  "tests/test_sub/CMakeFiles/test_sub.dir/DependInfo.cmake"
   )

@@ -1,5 +1,0 @@
-if(EXISTS "/home/lyy/repositories/Test/build/tests/test_cgal/test_cgal[1]_tests.cmake")
-  include("/home/lyy/repositories/Test/build/tests/test_cgal/test_cgal[1]_tests.cmake")
-else()
-  add_test(test_cgal_NOT_BUILT test_cgal_NOT_BUILT)
-endif()
