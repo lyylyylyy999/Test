@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # 构建 example 子模块
-add_subdirectory(examples)
+add_subdirectory(src)
 
 # 构建 tests 子模块
 enable_testing()

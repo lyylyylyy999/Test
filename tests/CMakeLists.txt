@@ -11,4 +11,5 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
 # 引入两个测试模块
-add_subdirectory(test_cgal)
+add_subdirectory(test_add)
+add_subdirectory(test_sub)
