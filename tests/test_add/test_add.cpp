@@ -2,7 +2,7 @@
 #include "add.hpp"
 
 // 测试add函数的基本功能
-TEST(AddTest, BasicAddition) {
+TEST(TestAdd, BasicAddition) {
     EXPECT_EQ(add(2, 3), 5);
     EXPECT_EQ(add(-1, 1), 0);
     EXPECT_EQ(add(0, 0), 0);
@@ -10,7 +10,7 @@ TEST(AddTest, BasicAddition) {
 }
 
 // 测试add函数的大数相加
-TEST(AddTest, LargeNumbers) {
+TEST(TestAdd, LargeNumbers) {
     EXPECT_EQ(add(1000000, 2000000), 3000000);
     EXPECT_EQ(add(-1000000, 1000000), 0);
 }

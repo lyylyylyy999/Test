@@ -149,4 +149,4 @@ src/sub/CMakeFiles/sub_lib.dir/sub.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/lyy/repositories/Test/src/sub/sub.hpp
+ /home/lyy/repositories/Test/include/sub.hpp

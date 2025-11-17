@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/lyy/repositories/Test/src/sub
+CXX_INCLUDES = -I/home/lyy/repositories/Test/include -I/home/lyy/repositories/Test/src/sub
 
 CXX_FLAGS = -g -std=gnu++17
 

@@ -1,13 +1,13 @@
 [
 {
   "directory": "/home/lyy/repositories/Test/build/src/add",
-  "command": "/usr/bin/g++  -I/home/lyy/repositories/Test/src/add -g -std=gnu++17 -o CMakeFiles/add_lib.dir/add.cpp.o -c /home/lyy/repositories/Test/src/add/add.cpp",
+  "command": "/usr/bin/g++  -I/home/lyy/repositories/Test/include -I/home/lyy/repositories/Test/src/add -g -std=gnu++17 -o CMakeFiles/add_lib.dir/add.cpp.o -c /home/lyy/repositories/Test/src/add/add.cpp",
   "file": "/home/lyy/repositories/Test/src/add/add.cpp",
   "output": "src/add/CMakeFiles/add_lib.dir/add.cpp.o"
 },
 {
   "directory": "/home/lyy/repositories/Test/build/src/sub",
-  "command": "/usr/bin/g++  -I/home/lyy/repositories/Test/src/sub -g -std=gnu++17 -o CMakeFiles/sub_lib.dir/sub.cpp.o -c /home/lyy/repositories/Test/src/sub/sub.cpp",
+  "command": "/usr/bin/g++  -I/home/lyy/repositories/Test/include -I/home/lyy/repositories/Test/src/sub -g -std=gnu++17 -o CMakeFiles/sub_lib.dir/sub.cpp.o -c /home/lyy/repositories/Test/src/sub/sub.cpp",
   "file": "/home/lyy/repositories/Test/src/sub/sub.cpp",
   "output": "src/sub/CMakeFiles/sub_lib.dir/sub.cpp.o"
 },
@@ -37,13 +37,13 @@
 },
 {
   "directory": "/home/lyy/repositories/Test/build/tests/test_add",
-  "command": "/usr/bin/g++  -I/home/lyy/repositories/Test/src/add -isystem /home/lyy/repositories/Test/build/_deps/googletest-src/googletest/include -isystem /home/lyy/repositories/Test/build/_deps/googletest-src/googletest -g -std=gnu++17 -o CMakeFiles/test_add.dir/test_add.cpp.o -c /home/lyy/repositories/Test/tests/test_add/test_add.cpp",
+  "command": "/usr/bin/g++  -I/home/lyy/repositories/Test/include -isystem /home/lyy/repositories/Test/build/_deps/googletest-src/googletest/include -isystem /home/lyy/repositories/Test/build/_deps/googletest-src/googletest -g -std=gnu++17 -o CMakeFiles/test_add.dir/test_add.cpp.o -c /home/lyy/repositories/Test/tests/test_add/test_add.cpp",
   "file": "/home/lyy/repositories/Test/tests/test_add/test_add.cpp",
   "output": "tests/test_add/CMakeFiles/test_add.dir/test_add.cpp.o"
 },
 {
   "directory": "/home/lyy/repositories/Test/build/tests/test_sub",
-  "command": "/usr/bin/g++  -I/home/lyy/repositories/Test/src/sub -isystem /home/lyy/repositories/Test/build/_deps/googletest-src/googletest/include -isystem /home/lyy/repositories/Test/build/_deps/googletest-src/googletest -g -std=gnu++17 -o CMakeFiles/test_sub.dir/test_sub.cpp.o -c /home/lyy/repositories/Test/tests/test_sub/test_sub.cpp",
+  "command": "/usr/bin/g++  -I/home/lyy/repositories/Test/include -isystem /home/lyy/repositories/Test/build/_deps/googletest-src/googletest/include -isystem /home/lyy/repositories/Test/build/_deps/googletest-src/googletest -g -std=gnu++17 -o CMakeFiles/test_sub.dir/test_sub.cpp.o -c /home/lyy/repositories/Test/tests/test_sub/test_sub.cpp",
   "file": "/home/lyy/repositories/Test/tests/test_sub/test_sub.cpp",
   "output": "tests/test_sub/CMakeFiles/test_sub.dir/test_sub.cpp.o"
 }
